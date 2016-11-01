@@ -115,7 +115,7 @@ describe("Game class", function() {
                 expect(typeof result).toEqual('string');
 
             });
-            it('returns "You Win!" if playersGuess equals winningGuess', function() {
+            it('returns "You Win!" if playersGuess equals winningNumber', function() {
                 game.winningNumber = 42;
                 expect(game.playersGuessSubmission(42)).toEqual('You Win!');
             });
